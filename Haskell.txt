@@ -1,0 +1,8 @@
+// from bma
+import Data.Time
+
+main = do
+        c <- getCurrentTime
+        if (show $ utctDay c) == "2013-03-15"
+                then putStrLn "March hack day!"
+                else putStrLn "Not today :-("
